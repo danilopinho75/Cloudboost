@@ -30,6 +30,23 @@ header {
                 }
             }
         }
+        .btn-mobile {
+            display: none;
+        }
     }
+    @include responsivo('mobile') {
+        .content-header {
+            padding: 2rem 2.5rem;
+            .right-content {
+                display: none;
+            }
+            .logo {
+                max-width: 13.5rem;
+            }
+            .btn-mobile {
+                display: block;
+            }
+        }
+    } 
 }
 
